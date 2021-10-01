@@ -41,11 +41,11 @@ public class PacketProcessor {
 
             de.sportkanone123.clientdetector.spigot.clientcontrol.ClientControl.handlePacket(player, channel, data);
 
-            /*System.out.println("-----------[Packet C -> S]-----------");
+            System.out.println("-----------[Packet C -> S]-----------");
             System.out.println("Player: " + player);
             System.out.println("Channel: '" + wrappedPacketInCustomPayload.getChannelName() + "'");
             System.out.println("Data: '" + new String(data, StandardCharsets.UTF_8) + "'");
-            System.out.println("-----------[Packet C -> S]-----------");*/
+            System.out.println("-----------[Packet C -> S]-----------");
         }
     }
 
