@@ -47,11 +47,11 @@ public class BungeeManager {
                 return;
             }
 
-            /*System.out.println("-----------[Packet]-----------");
+            System.out.println("-----------[Packet]-----------");
             System.out.println("Player: " + uuid);
             System.out.println("Channel: '" + channelMessage + "'");
             System.out.println("Data: '" + dataMessage + "'");
-            System.out.println("-----------[Packet]-----------");*/
+            System.out.println("-----------[Packet]-----------");
 
             if(ClientDetector.bungeePayload.get(UUID.fromString(uuid)) == null)
                 ClientDetector.bungeePayload.put(UUID.fromString(uuid) , new ArrayList<CustomPayload>());
