@@ -48,7 +48,7 @@ public class NetworkListener extends PacketListenerDynamic implements Listener {
         PacketProcessor.handleLoginPacket(event);
     }
 
-    /*@Override
+    @Override
     public void onPacketPlaySend(PacketPlaySendEvent event) {
         if(event.getPacketId() == PacketType.Play.Server.CUSTOM_PAYLOAD){
             WrappedPacketOutCustomPayload wrappedPacketInCustomPayload = new WrappedPacketOutCustomPayload(event.getNMSPacket());
@@ -59,5 +59,5 @@ public class NetworkListener extends PacketListenerDynamic implements Listener {
             System.out.println("Data: '" + new String(wrappedPacketInCustomPayload.getData(), StandardCharsets.UTF_8) + "'");
             System.out.println("-----------[Packet S -> C]-----------");
         }
-    }*/
+    }
 }
