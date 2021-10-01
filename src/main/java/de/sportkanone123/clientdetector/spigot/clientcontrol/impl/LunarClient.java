@@ -140,11 +140,11 @@ public class LunarClient {
 
     public interface LCNetHandler
     {
-        /*void handleAddWaypoint(final LCPacketWaypointAdd p0);
+        void handleAddWaypoint(final LCPacketWaypointAdd p0);
 
         void handleRemoveWaypoint(final LCPacketWaypointRemove p0);
 
-        void handleEmote(final LCPacketEmoteBroadcast p0);*/
+        void handleEmote(final LCPacketEmoteBroadcast p0);
     }
 
     public interface LCNetHandlerClient extends LCNetHandler
@@ -257,7 +257,7 @@ public class LunarClient {
         private static final Map<Integer, Class> idToClass = new HashMap<>();
 
         static {
-            /*// server
+            // server
             addPacket(0, LCPacketClientVoice.class);
             addPacket(16, LCPacketVoice.class);
             addPacket(1, LCPacketVoiceChannelSwitch.class);
@@ -287,13 +287,13 @@ public class LunarClient {
             addPacket(25, LCPacketGhost.class);
             addPacket(28, LCPacketBossBar.class);
             addPacket(29, LCPacketWorldBorderCreateNew.class);
-            addPacket(30, LCPacketWorldBorderUpdateNew.class);*/
+            addPacket(30, LCPacketWorldBorderUpdateNew.class);
             addPacket(31, LCPacketModSettings.class);
 
-            /*// shared
+            // shared
             addPacket(26, LCPacketEmoteBroadcast.class);
             addPacket(23, LCPacketWaypointAdd.class);
-            addPacket(24, LCPacketWaypointRemove.class);*/
+            addPacket(24, LCPacketWaypointRemove.class);
         }
 
         private Object attachment;
