@@ -66,9 +66,9 @@ public class ClientManager {
         ClientDetector.CLIENTS.add(new Client(Arrays.asList("MC|Brand", "minecraft:brand"), "Minecraft-Console-Client", "Console Client", false, true, "/", 1));
         ClientDetector.CLIENTS.add(new Client(Arrays.asList("MC|Brand", "minecraft:brand"), "Vanilla", "Jigsaw", false, false, null, null));
 
-        /*for(Client client : ClientDetector.CLIENTS){
+        for(Client client : ClientDetector.CLIENTS){
             client.load();
-        }*/
+        }
     }
 
     public static void unLoad(){
