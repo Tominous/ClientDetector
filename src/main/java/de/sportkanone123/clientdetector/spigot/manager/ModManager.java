@@ -37,9 +37,9 @@ public class ModManager {
         ClientDetector.MODS.add(new Mod(Arrays.asList("journeymap_channel", "journeymap:channel"), Arrays.asList(""), "JourneyMap", true));
         ClientDetector.MODS.add(new Mod(Arrays.asList("WECUI"), Arrays.asList(""), "WorldEditCUI", true));
 
-        /*for(Mod mod : ClientDetector.MODS){
+        for(Mod mod : ClientDetector.MODS){
             mod.load();
-        }*/
+        }
     }
 
     public static void unLoad(){
